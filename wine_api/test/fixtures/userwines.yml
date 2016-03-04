@@ -3,7 +3,7 @@
 one:
   user_id: 1
   wine_id: 1
-  notes: MyText
+  notes: Mmmmm, yummy!
 
 two:
   user_id: 1

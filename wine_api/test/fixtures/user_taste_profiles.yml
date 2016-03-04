@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  value1: 1
-  value2: 1
-  value3: 1
-  value4: 1
-  value5: 1
+  user_id: 1
+  value1: 25
+  value2: 50
+  value3: 75
+  value4: 25
+  value5: 100
 
 two:
+  user_id: 2
   value1: 1
   value2: 1
   value3: 1

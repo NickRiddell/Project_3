@@ -2,11 +2,11 @@
 
 one:
   wine_id: 1
-  value1: 1
-  value2: 1
-  value3: 1
-  value4: 1
-  value5: 1
+  value1: 50
+  value2: 50
+  value3: 75
+  value4: 25
+  value5: 100
 
 two:
   wine_id: 1
