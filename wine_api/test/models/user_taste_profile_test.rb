@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TasteProfileTest < ActiveSupport::TestCase
+class UserTasteProfileTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

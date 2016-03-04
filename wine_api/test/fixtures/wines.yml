@@ -1,11 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyText
-  grape: MyText
-  year: 1
+  name: TestWine1
+  grape: Shiraz
+  year: 2013
+  region: Australia
+  label: app/assets/images/Yellowtaillogo.png
+  wine_type: Red
+  supplier: Sainsburys
 
 two:
-  name: MyText
-  grape: MyText
-  year: 1
+  name: TestWine2
+  grape: Merlot
+  year: 2012
+  region: France
+  label: app/assets/images/Yellowtaillogo.png
+  wine_type: Red
+  supplier: Great Grog
