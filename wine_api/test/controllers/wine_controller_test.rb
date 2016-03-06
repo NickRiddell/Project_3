@@ -44,5 +44,5 @@ class WinesControllerTest < ActionController::TestCase
             delete :destroy, id: @wine
         end
         assert_response 204
-        end
     end
+end
