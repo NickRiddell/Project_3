@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'wine_taste_profile/index'
-
+ 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -16,6 +15,10 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
     resources :wines
+    resources :wine_taste_profiles
+    resources :user_taste_profiles
+    resources :userwines
+    resources :users
 
   # Example resource route with options:
   #   resources :products do
