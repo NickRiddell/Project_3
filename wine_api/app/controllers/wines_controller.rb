@@ -17,19 +17,34 @@ class WinesController < ApplicationController
 
     end
 
-    # POST /items
-    # POST /items.json
+    # POST /wines
+    # POST /wines.json
     def create
        @wine = Wine.new(wine_params)
        if @wine.save
-       @wines = Wine.all
-       render status: 201, :json => @wine
-      
+            @wines = Wine.all
+            render status: 201, :json => @wine
        else
-         render status: 404,  json: { message: @wine.errors}.to_json
+            render status: 404,  json: { message: @wine.errors}.to_json
        end
+    end
 
+    # PATCH/PUT /wines/1
+    # PATCH/PUT /wines/1.json
+    def update
+        set_wine
+        if @wine.update(wine_params)
+            render status: 204, :json => @wines, :include =>[{:wine_taste_profile =>{:except =>[:id, :created_at, :updated_at]}}], :except => [:created_at, :updated_at]
+        else
+            render status: 404,  json: { message: @wine.errors}.to_json
+        end
+    end
 
+    def destroy
+        set_wine
+        @wine.destroy
+        @wines = Wine.all
+        render status: 204, :json => @wines, :include =>[{:wine_taste_profile =>{:except =>[:id, :created_at, :updated_at]}}], :except => [:created_at, :updated_at]
     end
 
 
